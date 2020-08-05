@@ -1,8 +1,4 @@
-FROM ubuntu:16.04
- RUN apt-get update -qq; \
-   apt-get install -qq -y \
-   xvfb \
-   wget \
-   zip \
-   && apt-get clean \
-   && rm -rf /var/lib/apt/lists/*
+FROM ubuntu
+MAINTAINER me@gmail.com
+COPY Mirror.exe ~/.
+CMD ["Mirror.exe", "input1", "output"]
