@@ -1,4 +1,4 @@
 FROM ubuntu
-COPY Mirror.exe ~/.
+COPY . .
 EXPOSE 7777
-CMD ["Mirror.exe", "input1", "output"]
+CMD ["/Mirror.exe", "input1", "output"]
