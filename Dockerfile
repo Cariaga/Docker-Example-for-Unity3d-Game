@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/windows/servercore:ltsc2019
+FROM mcr.microsoft.com/windows/nanoserver:1809
 
 EXPOSE 7777
 CMD ["Mirror.exe", "input1", "output"]
