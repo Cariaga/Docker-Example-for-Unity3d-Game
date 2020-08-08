@@ -11,7 +11,7 @@ RUN apt-get update && \
 apt-get install -y libglu1 xvfb libxcursor1
 
 
-COPY build/                  /root/build/
+COPY ./                  /root/
 COPY entrypoint.sh           /entrypoint.sh
 
 WORKDIR /root/
