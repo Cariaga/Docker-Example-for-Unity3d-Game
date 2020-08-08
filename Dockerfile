@@ -6,4 +6,6 @@ FROM ubuntu:16.04
    zip \
    && apt-get clean \
    && rm -rf /var/lib/apt/lists/*
-COPY . /
+
+
+COPY  files /root/files
