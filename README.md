@@ -1,4 +1,4 @@
-# DockerExampleUnity3dGame
+# Docker Example for a Unity3d Game
 
 see Dockerfile and entrypoint.sh 
 
