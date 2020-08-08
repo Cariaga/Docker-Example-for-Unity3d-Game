@@ -6,4 +6,12 @@ FROM ubuntu:16.04
    zip \
    && apt-get clean \
    && rm -rf /var/lib/apt/lists/*
-COPY  files /root/files
+   
+RUN apt-get update && \
+apt-get install -y libglu1 xvfb libxcursor1
+
+COPY build/                  /root/build/
+COPY entrypoint.sh           /entrypoint.sh
+
+WORKDIR /root/
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
