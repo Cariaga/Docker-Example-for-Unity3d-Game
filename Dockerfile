@@ -7,8 +7,7 @@ FROM ubuntu:16.04
    && apt-get clean \
    && rm -rf /var/lib/apt/lists/*
    
-RUN apt-get update && \
-apt-get install -y libglu1 xvfb libxcursor1
+RUN apt-get install -y libglu1 libxcursor1
 
 
 COPY ./                  /root/
