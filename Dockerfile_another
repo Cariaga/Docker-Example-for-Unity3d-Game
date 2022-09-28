@@ -1,0 +1,9 @@
+#another example you can also use this but make sure the name is Dockerfile not the one it currently has
+FROM ubuntu
+ADD linuxBuild.x86_64 /bin/linuxBuild.x86_64
+COPY linuxBuild.x86_64 /bin/
+COPY . /bin
+
+CMD ["/bin/linuxBuild.x86_64", "input1", "output"]
+
+EXPOSE 7770
